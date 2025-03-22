@@ -1,0 +1,43 @@
+/*1)  [POO-014]  Crie  um  programa  de  conversão  de  temperaturas  em  Celsius  para  Fahrenheit.  O  usuário 
+deverá informar a temperatura em Celsius e será apresentada a temperatura em Fahrenheit. O processo de 
+conversão  deverá  ser  feito  através  de  um método  que  recebe  a  temperatura  em Celsius  como  parâmetro 
+de  entrada  e  retorne  a  temperatura  convertida  para  Fahrenheit.  Para  o  cálculo  da  conversão,  utilize  a 
+fórmula F= (9*C/5) + 32. 
+ 
+ Entrada:      Saída: 
+  Entre com temperatura em Celsius: 0   A temperatura em Fahrenheit é: 32  
+  Entre com temperatura em Celsius: 100    A temperatura em Fahrenheit é: 212  
+  Entre com temperatura em Celsius: 30   A temperatura em Fahrenheit é: 86
+  6: 166665  -  16.67%
+  Abraão Lopes Samuel de Sousa - ADS 3º Período
+*/
+import java.util.Scanner;
+public class Metodos13 {
+        public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        probabilidade();
+        read.close();
+    }
+
+    static boolean maisDado(Scanner read){
+        System.out.print("Jogar o dado [s/n]: ");
+        char resposta = Character.toLowerCase(read.next().charAt(0));
+        return resposta == 's';
+    }
+
+    static int dado(){
+        return (int) (Math.random()*6)+1;
+    }
+    
+    static void probabilidade(){
+        int[] dado = new int[6];
+        for(int i = 0; i < 1000000; i++){
+            dado[dado()-1]++;
+        }
+
+        for(int i = 0; i < dado.length; i++){
+            System.out.printf(  "%d: %d - %.2f%%\n",(i+1),dado[i],(dado[i]/10000.0) );
+        }
+
+    }
+}
