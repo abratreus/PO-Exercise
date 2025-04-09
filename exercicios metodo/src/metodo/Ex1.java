@@ -1,3 +1,4 @@
+package metodo;
 /* 1)  [POO-014]  Crie  um  programa  de  conversão  de  temperaturas  em  Celsius  para  Fahrenheit.  O  usuário 
 deverá informar a temperatura em Celsius e será apresentada a temperatura em Fahrenheit. O processo de 
 conversão  deverá  ser  feito  através  de  um método  que  recebe  a  temperatura  em Celsius  como  parâmetro 

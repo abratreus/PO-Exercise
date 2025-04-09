@@ -1,3 +1,4 @@
+package metodo;
 /*2) [POO-015] Crie um programa de conversão de temperaturas em Celsius para Fahrenheit e vice-versa. O 
 usuário deverá escolher se o valor de temperatura que será informado em Celsius ou em Fahrenheit. Se a 
 entrada for em Celsius, a saída deverá ser em Fahrenheit e o contrário, também, é verdade. O processo de 

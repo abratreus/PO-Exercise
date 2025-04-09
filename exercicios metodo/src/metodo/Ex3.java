@@ -1,3 +1,4 @@
+package metodo;
 /*3)  [POO-016]  ===Desafio!!!===  Semelhante  ao  exercício  [POO-015]  Crie  um  programa  de  conversão  de 
 temperaturas,  mas  agora  com  três  possibilidades  de  unidade  de  medida:  Celsius,  Fahrenheit  e  Kelvin.  A 
 saída deverá ser as outras duas temperaturas, exemplo: entrada em Celsius, a saída deve ser em Fahrenheit 
