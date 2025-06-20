@@ -13,9 +13,45 @@ public class Ex2 {
 
 class Bill{
 
+    /* atributos */
     private double bill;
     private int qntPeople;
     private boolean serviceTax;
 
-    
+    /* Metodos */
+
+    /* Construtor */
+
+    public Bill(double bill, int qntPeople, boolean serviceTax){
+        this.bill = bill;
+        this.qntPeople = qntPeople;
+        this.serviceTax = serviceTax;
+    }
+    /* Getther */
+
+    public double getBill(){
+        return bill;
+    }
+
+    public int getQntPeople(){
+        return qntPeople;
+    }
+
+    public boolean getServiceTax(){
+        return serviceTax;
+    }
+
+    /* Setther */
+
+    public void setBill(double bill){
+        this.bill = bill;
+    }
+
+    public void setQntPeople(int qntPeople){
+        this.qntPeople = qntPeople;
+    }
+
+    public void setServiceTax(boolean serviceTax){
+        this.serviceTax = serviceTax;
+    }
 }
