@@ -9,7 +9,7 @@ public class Data {
     private int ano = 2005;
 
      boolean validarData(int dia, int mes, int ano ){
-        if (dia <= -1 || dia >= 32)return false;
+        if (dia < 1 || dia >= 32)return false;
         if ( mes == 2 && dia >= 29)return false;
         if (mes <= 0 || mes >= 13)return false;
         if (ano <= -1 || ano >= 2026)return false;
