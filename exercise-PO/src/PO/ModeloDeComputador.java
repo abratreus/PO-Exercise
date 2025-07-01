@@ -49,8 +49,55 @@ public class  ModeloDeComputador {
     }
 
     int calcularPreco(int processador,int ram, int discRigido, int monitorTamanho){
+        int precoTotal = 800;
 
-        return 1;
+        //processador
+        switch (processador) {
+            case 1600:
+                processador = 700;
+                break;
+            case 1800:
+                processador = 830;
+                break;
+            case 1900:
+                processador = 910;
+            default:
+                break;
+        }
+        //ram
+        ram *= 350;
+        //disco
+        switch (discRigido) {
+            case 500:
+            discRigido = 300;
+            break;
+            case 1000:
+            discRigido = 420;
+            break;
+            case 2000:
+            discRigido = 500;
+            break;
+            default:
+            discRigido = 0;
+            break;
+        }
+        //monitor
+        switch (monitorTamanho) {
+            case 15:
+            monitorTamanho = 320;
+            break;
+            case 17:
+            monitorTamanho = 520;
+            break;
+            default:
+            monitorTamanho = 0;
+            break;
+        }
+
+        // Preço total
+        
+        precoTotal = 800 + processador + ram + discRigido + monitorTamanho;
+        return precoTotal;
     }
 }
 
